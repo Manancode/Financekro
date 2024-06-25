@@ -8,18 +8,17 @@ import Link from "next/link";
 import DropDownMenu from "./drop-down-menu";
 
 interface NavbarProps {
-  scrollToWebsiteDesign: () => void;
-  scrollToGraphicDesign: () => void;
-  scrollTovideoedit: () => void;
-  scrollToshortsedit: () => void;
+  scrollTofeatures: () => void;
+
+  scrollToaboutus: () => void;
+  scrollTointegration: () => void;
   // Define scrollToServices function
 }
 
 const Navbar = ({
-  scrollToWebsiteDesign,
-  scrollToGraphicDesign,
-  scrollTovideoedit,
-  scrollToshortsedit,
+  scrollTofeatures,
+  scrollTointegration,
+  scrollToaboutus , 
  
 }: NavbarProps) => {
   const [isDropDownVisible, setIsDropDownVisible] = useState(false);
@@ -36,15 +35,11 @@ const Navbar = ({
     <div>
       <div className="p-6 md:p-10 flex items-center justify-between z-50">
         <div>
-          <Link className="cursor-pointer" href="/">
-            <Image
-              priority
-              src="/logo.svg"
-              alt="Logo"
-              width={100}
-              height={100}
-              className="w-10 h-10 md:w-14 md:h-14"
-            />
+          <Link className=" text-slate-300 
+             bg-clip-text text-transparent text-center
+             bg-gradient-to-b from-neutral-50
+              to bg-neutral-400 bg-opac" href="/">
+            Financekro
           </Link>
         </div>
         <div
@@ -55,23 +50,24 @@ const Navbar = ({
              bg-gradient-to-b from-neutral-50
               to bg-neutral-400 bg-opacity-50"
         >
-          <div onClick={scrollToWebsiteDesign} className="hover:text-gray-50">
-            Website Design
+          <div onClick={scrollTofeatures} className="hover:text-gray-50">
+            Features
           </div>
-          <div onClick={scrollToGraphicDesign} className="hover:text-gray-50">
-            Graphic Design
-          </div>
-
-          <div onClick={scrollTovideoedit} className="hover:text-gray-50">
-            Video editing
-          </div>
-          <div onClick={scrollToshortsedit} className="hover:text-gray-50">
-           Shorts editing
+          <div onClick={scrollTointegration} className="hover:text-gray-50">
+            Integration
           </div>
 
+          <div onClick={scrollToaboutus} className="hover:text-gray-50">
+            About us
+          </div>
+          
           <Link href="/pricing" className="hover:text-gray-50">
             Pricing
           </Link>
+          <Link href="/contact" className="hover:text-gray-50">
+            Contact us
+          </Link>
+
         </div>
 
         <div className="flex md:hidden">
@@ -97,7 +93,7 @@ const Navbar = ({
 
         <div className="hidden md:flex">
           <Link
-            href="/contact"
+            href="/"
             className="
             inline-flex h-12 animate-shimmer items-center justify-center 
             rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] 
@@ -107,7 +103,7 @@ const Navbar = ({
 
             "
           >
-            Contact
+            Dashboard
           </Link>
         </div>
       </div>

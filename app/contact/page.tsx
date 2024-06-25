@@ -123,10 +123,10 @@ export default function ContactForm() {
   return (
     <div className=" w-full   md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden ">
       <Navbar
-        scrollToWebsiteDesign={() => {}}
-        scrollToGraphicDesign={() => {}}
-        scrollTovideoedit={() => {}}
-        scrollToshortsedit={() => {}}
+        scrollTofeatures={() => {}}
+        
+        scrollTointegration={() => {}}
+        scrollToaboutus={() => {}}
         
       />
       <div className="md:flex items-start justify-center md:py-20 px-6">
