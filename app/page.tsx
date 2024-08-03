@@ -1,15 +1,15 @@
 "use client"
-import Navbar from "@/components/navbar";
+// import Navbar from "@/components/navbar";
 
 
-import Services from "./services";
-import { useRef } from "react";
+// import Services from "./services";
+// import { useRef } from "react";
 // import { BackgroundBeamsDemo } from "@/components/waitlist";
-import Features from "./features";
-import Integration from "./integration";
-import Aboutus from "./aboutus";
+// import Features from "./features";
+// import Integration from "./integration";
+// import Aboutus from "./aboutus";
 import Newsletter from "@/components/newsletter";
-import { TabsDemo } from "./animatedtabs";
+// import { TabsDemo } from "./animatedtabs";
 
 
 
@@ -17,43 +17,43 @@ import { TabsDemo } from "./animatedtabs";
 
 export default function Home() {
 
-  const featuresref = useRef<HTMLDivElement>(null)
-  const integrationref = useRef<HTMLDivElement>(null)
-  const aboutusref = useRef<HTMLDivElement>(null)
+//   const featuresref = useRef<HTMLDivElement>(null)
+//   const integrationref = useRef<HTMLDivElement>(null)
+//   const aboutusref = useRef<HTMLDivElement>(null)
   
 
-const scrollTofeatures = () => {
-    featuresref.current?.scrollIntoView({
-    behavior: "smooth",
-    block: "start",
-    inline: "nearest",
-  });
-};
+// const scrollTofeatures = () => {
+//     featuresref.current?.scrollIntoView({
+//     behavior: "smooth",
+//     block: "start",
+//     inline: "nearest",
+//   });
+// };
 
 
 
-const scrollTointegration = () => {
-  integrationref.current?.scrollIntoView({ behavior: "smooth" });
-};
+// const scrollTointegration = () => {
+//   integrationref.current?.scrollIntoView({ behavior: "smooth" });
+// };
 
-const scrollToaboutus = () => {
-  aboutusref.current?.scrollIntoView({ behavior: "smooth" });
-};
+// const scrollToaboutus = () => {
+//   aboutusref.current?.scrollIntoView({ behavior: "smooth" });
+// };
 
 
   return (
-    <div className="w-full md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
+//     <div className="w-full md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
     
-    <Navbar
+//     <Navbar
 
-    scrollTofeatures = {scrollTofeatures}
+//     scrollTofeatures = {scrollTofeatures}
     
-    scrollTointegration= {scrollTointegration}
-     scrollToaboutus = {scrollToaboutus}
-/> 
+//     scrollTointegration= {scrollTointegration}
+//      scrollToaboutus = {scrollToaboutus}
+// /> 
 
 <Newsletter/>
-              <div ref={featuresref}><Features/></div>
+{/*               <div ref={featuresref}><Features/></div>
 {/* <div ref={integrationref}> 
               <Integration/></div>               */}
               {/* <div ref={aboutusref}>
@@ -62,7 +62,7 @@ const scrollToaboutus = () => {
              
             
               
-            </div>
+            </div> */}
         
   )
 }
