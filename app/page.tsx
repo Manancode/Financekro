@@ -53,16 +53,9 @@ export default function Home() {
 // /> 
 
 <Newsletter/>
-{/*               <div ref={featuresref}><Features/></div>
-{/* <div ref={integrationref}> 
-              <Integration/></div>               */}
-              {/* <div ref={aboutusref}>
-              <Aboutus/></div> */}
+
             
-             
-            
-              
-            </div> */}
+    
         
   )
 }
